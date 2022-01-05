@@ -29,6 +29,17 @@
             width: 350px;
         }
     }
+    .carousel{
+        .prev{
+            left: 4%;
+            img{
+            }
+            }
+        .next{
+            right: 4%;
+            left: auto;
+        }
+    }
 }
 @media (max-width: 991px){
     .promo{
@@ -53,6 +64,14 @@
             margin-top: 30px;
         }
     }
+    .carousel {
+        padding: 50px 0;
+        &__inner{
+                img{
+                    width: 80%;
+                }
+            }
+        } 
 }
 @media (max-width: 767px){
     .header{
@@ -119,6 +138,12 @@
         &__descr{
            font-size: 23px;
         }
+    }
+    .tns-nav{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translatex(-50%);
     }
 }
 @media (max-width: 575px){
@@ -187,6 +212,7 @@
         &_submit{
             width: 90%;
             height: 50px;
+            font-size: 15px;
         }
     }
     .advantage{
@@ -208,6 +234,20 @@
     .feed-form{
         input{
             width: 90%;
+        }
+    }
+    .carousel{
+        .prev{
+            left: -2%;
+            }
+        .next{
+            right: -2%;
+            left: auto;
+        }
+        &__inner{
+            img{
+                width: 70%;
+            }
         }
     }
 }
