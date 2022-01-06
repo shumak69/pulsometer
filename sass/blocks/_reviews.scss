@@ -1,0 +1,41 @@
+.reviews{
+    &__title{
+        color: $dark;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    &__clients{
+        padding: 70px 0;
+    }
+    &__user{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__img{
+        margin-right: 61px;
+    }
+    &__name{
+        color: $dark;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__rank{
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    &__descr{
+        color: $dark;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 19px;
+    }
+}

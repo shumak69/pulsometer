@@ -32,8 +32,6 @@
     .carousel{
         .prev{
             left: 4%;
-            img{
-            }
             }
         .next{
             right: 4%;
@@ -72,6 +70,24 @@
                 }
             }
         } 
+    .catalog{
+        &__content{
+            &_active{
+                justify-content: center;
+            }
+        }
+        &-item{
+            &:nth-child(3n){
+                margin-right: 20px;
+            }
+        }
+    }
+    .reviews{
+        &__img{
+            margin-right: 40px;
+            margin-left: 20px;
+        }
+    }
 }
 @media (max-width: 767px){
     .header{
@@ -144,6 +160,23 @@
         top: 100%;
         left: 50%;
         transform: translatex(-50%);
+        button {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .catalog{
+        &__tab{
+            width: 176px;
+            height: 40px;
+            font-size: 15px;
+            line-height: 2.5em;
+        }
+    }
+    .reviews{
+        &__clients{
+            padding-bottom: 50px;
+        }
     }
 }
 @media (max-width: 575px){
@@ -238,16 +271,45 @@
     }
     .carousel{
         .prev{
-            left: -2%;
+            left: 1%;
             }
         .next{
-            right: -2%;
+            right: 1%;
             left: auto;
         }
         &__inner{
             img{
                 width: 70%;
             }
+        }
+    }
+    .catalog{
+        &__tab{
+            width: 158.4px;
+            height: 36px;
+            font-size: 10px;
+            line-height: 3.5em;
+            margin-left: 10px;
+        }
+        &-item{
+            margin-right: 0;
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+        }
+    }
+    .reviews{
+        &__user{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        &__name{
+            margin-top: 10px;
+        }
+        &__descr{
+            padding: 0 15px;
         }
     }
 }
