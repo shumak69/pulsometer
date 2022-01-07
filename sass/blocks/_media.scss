@@ -383,4 +383,26 @@
             width: 100%;
         }
     }
+    .modal{
+        width: 266px;
+        min-height: 280px;
+        &__subtitle{
+            line-height: 1.2em;
+            margin-bottom: 10px;
+        }
+        &__descr{
+            line-height: 1.3em;
+        }
+        .feed-form{
+            input{
+                width: 120%;
+            }
+            .button{
+                &_submit{
+                    width: 120%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
