@@ -343,11 +343,17 @@
     }
     .catalog{
         &__tab{
-            width: 158.4px;
+            width: 90px;
             height: 36px;
             font-size: 10px;
             line-height: 3.5em;
-            margin-left: 10px;
+            margin-left: 4px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
         }
         &-item{
             margin-right: 0;
