@@ -144,5 +144,7 @@ document.querySelector('.next').addEventListener('click',  function () {
         });
       }
     });
+    
+    new WOW().init();
 });
 })(jQuery);
